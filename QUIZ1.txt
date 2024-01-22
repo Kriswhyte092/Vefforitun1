@@ -1,0 +1,49 @@
+Q1: What is the difference between the internet and the WWW?
+	- The internet is a network of networks with corresponding protocols that enables information sharing. The WWW is an imaginary information space that 
+	  basically "runs on" the internet.
+	  This option accurately describes the relationship between the internet and the World Wide Web (WWW). The internet is the physical infrastructure, 
+	  consisting of interconnected networks and hardware, while the WWW is a system of interlinked documents and resources accessed via the internet. The WWW relies on 
+	  the internet to function, as it utilizes the internet's infrastructure for data transmission.
+Q2: Which statements are correct regarding the TCP/IP protocol stack?
+	- Host names are translated to IP addresses using the DNS protocol.
+		- This is correct. The Domain Name System (DNS) is used to translate human-readable host names (like www.example.com) into IP addresses.
+	- A request is routed to a target host through a number of intermediate hosts.
+		- This is also correct. In the TCP/IP protocol stack, data is typically routed through multiple intermediate hosts (routers) to reach the final 
+	          destination.
+	- The IP protocol uses IP addresses to identify machines on the internet.
+		-This is correct. The Internet Protocol (IP) uses IP addresses to uniquely identify devices on a network, including the internet.
+Q3:Which statements are true regarding HTTP?
+	- DELETE is a safe method.
+	  -False. DELETE is not considered a safe method in HTTP. It is intended to request that a resource be removed or deleted, which implies a change in state.
+x
+	- PUT is an idempotent method.
+	  -True. The PUT method is idempotent, meaning that multiple identical requests should have the same effect as a single request.
+	  
+	- Important information in HTTP requests is encrypted.
+	  -False. By default, HTTP does not encrypt the data, so it is sent in clear text. If encryption is needed, HTTPS (HTTP Secure) should be used.
+
+	- Both the request and response of an HTTP request have extra information, so-called headers.
+	  -True. HTTP headers provide additional information about the request or response, such as content type, length, authentication, etc.
+
+	- HTTP is stateful.
+	  -False. HTTP is considered stateless. Each request from a client to a server is independent, and the server does not retain any information about the state 
+	   of the client between requests.
+
+	- HTTP is stateless.
+	  -True. As mentioned earlier, HTTP is a stateless protocol. Each request is independent, and the server does not retain any information about the state of the 
+	   client between requests.
+
+	- Everything sent via HTTP is in clear text.
+	   -True. By default, HTTP sends data in clear text, which means that the information is not encrypted. If encryption is required, HTTPS should be used.
+Q4: Which statements are true regarding HTTP response codes?
+	- Codes starting with 4 indicate client errors. (True)
+	 HTTP status codes in the 4xx range indicate client errors, meaning that the client (e.g., the web browser or user agent) has made a request that the server 
+	 cannot fulfill.
+
+	- The 200 status code means a request was successful. (True)
+	  The HTTP status code 200 indicates a successful request. It is the standard response for successful HTTP requests.
+
+	- Codes starting with 5 indicate the server has done something wrong. (False)
+	  Codes starting with 5 (e.g., 500 Internal Server Error) indicate server errors. They suggest that the server failed to fulfill a valid request made by the 
+	  client, and the problem is on the server side, not the client side. They do not indicate that the user has done something wrong.
+Q5: Cookies are used to add stateful behaviour to web sites. What is true regarding cookies?
